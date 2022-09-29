@@ -6,14 +6,19 @@ public class UserResponse {
 	    private String name;
 	    private String email;
 	    private String phoneno;
+	    private String address;
+	    private String subject;
+	    
 	    public UserResponse() {
 	        
 	    }
-	    public UserResponse(int id,String name,String email,String phoneno) {
+	    public UserResponse(int id,String name,String email,String phoneno,String address,String subject) {
 	        this.id = id;
 	        this.name = name;
 	        this.email = email;
 	        this.phoneno = phoneno;
+	        this.address= address;
+	        this.subject=subject;
 	    }
 	    
 	      public int getID() {
@@ -47,6 +52,23 @@ public class UserResponse {
 	       public void setPhoneno(String phoneno) {
 	           this.phoneno = phoneno;
 	       }
+	       
+	       public String getAddress() {
+		          return address;
+		       }
+		       
+		       public void setAddress(String address) {
+		           this.address = address;
+		           
+		       }
+		       
+		       public String getSubject() {
+			          return subject;
+			       }
+			       
+			       public void setSubject(String subject) {
+			           this.subject=subject;
+			       }
 	}
 
 
